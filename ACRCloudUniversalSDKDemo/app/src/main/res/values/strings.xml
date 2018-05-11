@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ACRCloudUniversalSDKDemo</string>
+
+    <string name="start">start</string>
+    <string name="cancel">cancel</string>
+    <string name="request_radio_meta">Request Radio Meta [Test]</string>
+    <string name="auto_switch_label">Auto Recognize:</string>
+    <string name="auto_switch_open">Open</string>
+    <string name="auto_switch_close">Close</string>
+    <string name="stop">stop record and recognize(humming)</string>
+    <string name="recording">recording</string>
+    <string name="play">play</string>
+    <string name="volume">volume:</string>
+    <string name="error">Error</string>
+    <string name="suss">Suss</string>
+</resources>

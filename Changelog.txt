@@ -1,0 +1,8 @@
+version 1.1.0
+- Add radio search function and fixed some bugs.
+
+version 1.0.1
+- RecorderType add "USER" option, support user's pcm stream.
+
+version 1.0.0
+- init version.

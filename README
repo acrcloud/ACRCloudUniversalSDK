@@ -1,0 +1,11 @@
+Directory Description:
+
+1. ACRCloudUniversalSDKDemo
+	demo project
+	
+2. libs
+	all librarys of sdk
+		(1) acrcloud-universal-sdk-(version).jar: java library
+		(2) libACRCloudUniversalEngine.so: JNI library
+		
+3. docs: https://docs.acrcloud.com/

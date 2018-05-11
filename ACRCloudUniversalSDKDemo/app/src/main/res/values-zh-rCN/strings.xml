@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ACRCloudUniversalSDKDemo</string>
+
+    <string name="start">开始</string>
+    <string name="cancel">取消</string>
+    <string name="request_radio_meta">请求电台信息【测试】</string>
+    <string name="auto_switch_label">自动识别:</string>
+    <string name="auto_switch_open">开启</string>
+    <string name="auto_switch_close">关闭</string>
+    <string name="stop">停止录音并识别</string>
+    <string name="recording">录音中</string>
+    <string name="play">播放</string>
+    <string name="volume">音量:</string>
+    <string name="error">错误</string>
+    <string name="suss">成功</string>
+</resources>
