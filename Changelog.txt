@@ -1,3 +1,6 @@
+version 1.1.1
+- Modify radio search function.
+
 version 1.1.0
 - Add radio search function and fixed some bugs.
 
