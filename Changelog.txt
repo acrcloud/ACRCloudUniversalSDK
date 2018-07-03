@@ -1,3 +1,6 @@
+version 1.2.0
+- Optimize fingerprint mode.
+
 version 1.1.2
 - Add humming recognition.
 
