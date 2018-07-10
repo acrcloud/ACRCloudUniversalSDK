@@ -1,3 +1,8 @@
+version 1.2.1
+- support user's recorder.
+-    this.mConfig.recorderType = ACRCloudConfig.RecorderType.RECORDER_USER;
+-    this.mConfig.userRecorderEngine = new RecorderUserTest();
+
 version 1.2.0
 - Optimize fingerprint mode.
 
