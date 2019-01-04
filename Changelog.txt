@@ -1,3 +1,6 @@
+version 1.2.6
+- Update IllegalThreadStateException.
+
 version 1.2.5
 - Optimize humming fingerprint.
 
