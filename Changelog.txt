@@ -1,3 +1,6 @@
+version 1.2.7
+- Fix recorder ByteArrayOutputStream OutOfMemoryError.
+
 version 1.2.6
 - Update IllegalThreadStateException.
 
