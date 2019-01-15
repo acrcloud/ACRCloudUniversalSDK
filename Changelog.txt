@@ -1,3 +1,6 @@
+version 1.2.8
+- Limit the minimum length of humming audio.
+
 version 1.2.7
 - Fix recorder ByteArrayOutputStream OutOfMemoryError.
 
