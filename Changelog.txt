@@ -1,3 +1,6 @@
+version 1.2.11
+- optimize humming fingerprint.
+
 version 1.2.10
 - Reduced the size of the share library.
 
