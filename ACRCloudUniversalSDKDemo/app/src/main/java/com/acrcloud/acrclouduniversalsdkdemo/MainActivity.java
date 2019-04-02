@@ -127,9 +127,9 @@ public class MainActivity extends AppCompatActivity implements IACRCloudListener
         this.mConfig.recorderConfig.isVolumeCallback = true;
 
         this.mClient = new ACRCloudClient();
-        this.initState = this.mClient.initWithConfig(this.mConfig);
-
         ACRCloudLogger.setLog(true);
+
+        this.initState = this.mClient.initWithConfig(this.mConfig);
     }
 
     public void start() {
@@ -203,6 +203,15 @@ public class MainActivity extends AppCompatActivity implements IACRCloudListener
     public void onResult(ACRCloudResult results) {
         this.reset();
 
+	// If you want to save the record audio data, you can refer to the following codes.
+	/*
+	byte[] recordPcm = results.getRecordDataPCM();
+        if (recordPcm != null) {
+            byte[] recordWav = ACRCloudUtils.pcm2Wav(recordPcm, this.mConfig.recorderConfig.rate, this.mConfig.recorderConfig.channels);
+            ACRCloudUtils.createFileWithByte(recordWav, path + "/" + "record.wav");
+        }
+	*/
+
         String result = results.getResult();
 
         String tres = "\n";
@@ -242,7 +251,7 @@ public class MainActivity extends AppCompatActivity implements IACRCloudListener
     @Override
     public void onVolumeChanged(double volume) {
         long time = (System.currentTimeMillis() - startTime) / 1000;
-        mVolume.setText(getResources().getString(R.string.volume) + volume + "\n\n录音时间：" + time + " s");
+        mVolume.setText(getResources().getString(R.string.volume) + volume + "\n\nTime: " + time + " s");
     }
 
     private static final int REQUEST_EXTERNAL_STORAGE = 1;

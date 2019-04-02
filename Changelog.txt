@@ -1,3 +1,7 @@
+version 1.2.12
+- Add "ACRCloudUtils.pcm2Wav" function, you can use it to
+-     encode PCM Data to WAV Data.
+
 version 1.2.11
 - optimize humming fingerprint.
 
