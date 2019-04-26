@@ -1,3 +1,6 @@
+version 1.2.13
+- Radio API add "device_id".
+
 version 1.2.12
 - Add "ACRCloudUtils.pcm2Wav" function, you can use it to
 -     encode PCM Data to WAV Data.
