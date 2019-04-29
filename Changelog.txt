@@ -1,3 +1,6 @@
+version 1.2.14
+- Adjusted the internal structure of sdk.
+
 version 1.2.13
 - Radio API add "device_id".
 
