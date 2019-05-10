@@ -1,3 +1,6 @@
+version 1.2.15
+- Replace http with https for Login API.
+
 version 1.2.14
 - Adjusted the internal structure of sdk.
 
