@@ -12,3 +12,6 @@ Directory Description:
 
 4. libs-so-tinyalsa
     If you can not use tinyalsa of libs, you can try this share library.
+
+5. libs-c
+    C/C++ library.
