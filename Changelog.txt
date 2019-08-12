@@ -1,4 +1,4 @@
-version 1.2.16
+version 1.2.17
 - Fix NULL Poiner Exception Bug.
 
 version 1.2.15
