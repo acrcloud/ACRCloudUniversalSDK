@@ -1,3 +1,6 @@
+version 1.2.16
+- Fix NULL Poiner Exception Bug.
+
 version 1.2.15
 - Replace http with https for Login API.
 
