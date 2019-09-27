@@ -1,3 +1,6 @@
+version 1.2.20
+- Add "IACRCloudRecordDataListener", It can return the current recorded data in real time.
+
 version 1.2.18
 - Fix some bugs of humming fingerprint.
 
