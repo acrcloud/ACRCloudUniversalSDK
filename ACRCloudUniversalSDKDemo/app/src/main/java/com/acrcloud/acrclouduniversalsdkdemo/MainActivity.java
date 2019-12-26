@@ -123,6 +123,28 @@ public class MainActivity extends AppCompatActivity implements IACRCloudListener
         this.mConfig.recorderConfig.rate = 8000;
         this.mConfig.recorderConfig.channels = 1;
 
+        this.mConfig.acrcloudPartnerDeviceInfo = new IACRCloudPartnerDeviceInfo() {
+            @Override
+            public String getGPS() {
+                return null;
+            }
+
+            @Override
+            public String getRadioFrequency() {
+                return null;
+            }
+
+            @Override
+            public String getDeviceId() {
+                return "";
+            }
+
+            @Override
+            public String getDeviceModel() {
+                return null;
+            }
+        };
+
         // If you do not need volume callback, you set it false.
         this.mConfig.recorderConfig.isVolumeCallback = true;
 
