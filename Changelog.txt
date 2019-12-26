@@ -1,3 +1,6 @@
+version 1.2.21
+- Add "AudioDeviceInfo" to "ACRCloudConfig.RecorderConfig", you can config it by "this.mConfig.recorderConfig.audioDeviceInfo".
+
 version 1.2.20
 - Add "IACRCloudRecordDataListener", It can return the current recorded data in real time.
 
