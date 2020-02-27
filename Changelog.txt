@@ -1,3 +1,6 @@
+version 1.2.22
+- Check if function "recognize" is running on the UI Main Thread.
+
 version 1.2.21
 - Add "AudioDeviceInfo" to "ACRCloudConfig.RecorderConfig", you can config it by "this.mConfig.recorderConfig.audioDeviceInfo".
 
