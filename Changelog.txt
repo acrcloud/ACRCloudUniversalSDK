@@ -1,3 +1,6 @@
+version 1.2.29
+- Enhanced some security configurations.
+
 version 1.2.28
 - Remove the Get parameters of the identify URL.
 
