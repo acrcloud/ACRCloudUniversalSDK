@@ -1,3 +1,6 @@
+version 1.2.30
+- Recompile So.
+
 version 1.2.29
 - Enhanced some security configurations.
 
