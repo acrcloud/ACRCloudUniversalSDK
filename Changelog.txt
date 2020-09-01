@@ -1,3 +1,6 @@
+version 1.2.31
+- Support the server to control the automatic identification interval.
+
 version 1.2.30
 - Recompile So.
 
