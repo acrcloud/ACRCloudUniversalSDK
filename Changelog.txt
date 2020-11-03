@@ -1,3 +1,11 @@
+version 1.3.1
+- Support dynamically updating accesskey.
+    - ACRCloudConfig.RecognizerConfig c1 = new ACRCloudConfig.RecognizerConfig();
+    - c1.host = "";
+    - c1.accessKey = "";
+    - c1.accessSecret = "";
+    - this.mClient.startRecognize(c1)
+
 version 1.2.31
 - Support the server to control the automatic identification interval.
 
