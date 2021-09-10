@@ -1,0 +1,116 @@
+version 1.5.9
+- Add param createFingerprintMode in ACRCloudConfig.
+  If your device do not have FPU, you can try add this config:
+      this.mConfig.createFingerprintMode = ACRCloudConfig.CreateFingerprintMode.FAST;
+- Create a new Demo project.
+
+version 1.5.8.2
+- Modify the default network protocol to HTTPS.
+
+version 1.5.8.1
+- Modify the default parameters of function createHummingClientFingerprint.
+
+version 1.5.8
+- Add "recognize" function for Humming.
+
+version 1.5.7.6
+- Add "timestamp_utc" for Offline recognition.
+
+version 1.5.7.5
+- Add "clearAudioBuffer" in ACRCloudClient.
+
+version 1.5.7.4
+- Modify compileSdkVersion to 26.
+
+version 1.5.7.3
+- Add total timeout, default 300000ms.
+
+version 1.5.7.2
+- modify offline db bug.
+
+version 1.5.7.1
+- Optimize mute threshold.
+
+version 1.5.7
+- Add "muteThreshold" to ACRCloudConfig, it can be used to filter mute audio. Default Value: 500.
+- In general, this option is not used.
+
+version 1.5.6.6
+- Replace "IP" with "URL".
+
+version 1.5.6.5
+- initWithConfig can reentrant.
+
+version 1.5.6.4
+- Add a parameter "fingerprintType", if set "ACRCloudFingerprintType.FINGERPRINT_TYPE_LITE", it will reduce the fingerprint size.
+
+version 1.5.6.3
+- Adjust play offset time.
+
+version 1.5.6.2
+- "setting audioRecordSource" can support others source.
+
+version 1.5.6.1
+- Fix "setting audioRecordSource" bug.
+
+version 1.5.6
+- Add "audioRecordSource" in ACRCloudConfig, user can set other MediaRecorder.AudioSource, default value is "MediaRecorder.AudioSource.MIC".
+
+version 1.5.5
+- Build SDK with JDK6.
+
+version 1.5.4
+- Fix create humming fingerprint crash bug.
+
+version 1.5.3
+- Fix startRecognize function bug that check "this.mConfig.acrcloudListener == null".
+
+version 1.5.2
+- Add recognize function with sampleRate and nChannels
+
+version 1.5.1
+- Add asynchronous recognize function
+    this.mClient.recognize(buffer, bufferLen, new IRecognizeCallback() {
+            @Override
+            public void onResult(String jsonResult) {
+                Log.e("example", jsonResult);
+            }
+        });
+
+version 1.5.0
+- Standardize the error code.
+
+version 1.4.5
+- modify offline rec bug without network.
+
+version 1.4.4
+- modify ACRCloudClient.recognize (use web api).
+
+version 1.4.3
+- ACRCloudConfig add https protocol.
+
+version 1.4.2
+- libACRCloudEngine.so: modify humming fingerprint bug.
+
+version 1.4.1
+- class ACRCloudClient: add function resampleBit32Int() and resampleBit32Float() 
+
+version 1.4.0
+- add a new Listener(IACRCloudResultWithAudioListener), if you implement it and add "this.mConfig.acrcloudResultWithAudioListener = this;",
+  you can get audio data by "public void onResult(ACRCloudResult result)". For example:
+  public class MainActivity extends AppCompatActivity implements IACRCloudResultWithAudioListener {
+      this.mConfig = new ACRCloudConfig();
+      //this.mConfig.acrcloudListener = this;
+      this.mConfig.acrcloudResultWithAudioListener = this; // If you add this line, the SDK will call new callback function(onResult(ACRCloudResult result))
+      this.mConfig.context = this;
+
+     @Override
+     public void onResult(ACRCloudResult result) {
+        // new callback function, you can get audio data by "result.getRecordDataPCM()"
+     }
+
+    //@Override
+    //public void onResult(String result) {
+    //    // old callback function
+    //}
+  }

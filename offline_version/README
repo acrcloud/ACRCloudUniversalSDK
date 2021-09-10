@@ -1,0 +1,22 @@
+Directory Description:
+
+1. ACRCloudSDKDemo
+	demo project
+	
+2. libs
+	all librarys of sdk
+		(1) acrcloud-android-sdk-(version).jar: java library
+		(2) libACRCloudEngine.so: JNI library
+		
+3. docs: https://docs.acrcloud.com/
+
+
+Offline Version tutorials:
+1. Refer to this doc(https://docs.acrcloud.com/tutorials/recognize-custom-content-offline), generate a offline db.
+2. Unzip the db file(afp.iv, afp.df, afp.op), copy this db folder to SD card of mobile.
+3. Update the following configs of SDK,
+    this.mConfig.dbPath = "db folder of SD card";
+    this.mConfig.accessKey = "access_key of offline db";
+    this.mConfig.accessSecret = "secret_key of offline db";
+    this.mConfig.reqMode = ACRCloudConfig.ACRCloudRecMode.REC_MODE_LOCAL;
+4. Run App and identify.

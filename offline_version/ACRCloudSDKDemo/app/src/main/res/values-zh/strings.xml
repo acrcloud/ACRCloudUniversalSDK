@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ACRCloudSDKDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="start">开始</string>
+    <string name="cancel">取消</string>
+    <string name="stop">停止录音并搜索(仅哼唱)</string>
+    <string name="recording">正在录音</string>
+    <string name="volume">音量:</string>
+</resources>
