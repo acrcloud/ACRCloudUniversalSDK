@@ -1,3 +1,7 @@
+version 1.3.6
+- Add clearAudioBuffer function.
+- Add new humming fingerprint type.
+
 version 1.3.5
 - Add some host config.
 
