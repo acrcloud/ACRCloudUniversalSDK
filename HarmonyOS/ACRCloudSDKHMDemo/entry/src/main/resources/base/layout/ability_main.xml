@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <ScrollView
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:layout_alignment="horizontal_center">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:right_padding="8vp"
+            ohos:left_padding="8vp">
+
+            <Button
+                ohos:id="$+id:start"
+                ohos:background_element="$graphic:background_button"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text_size="20fp"
+                ohos:top_margin="5fp"
+                ohos:text="开始"/>
+
+            <Button
+                ohos:id="$+id:stop"
+                ohos:background_element="$graphic:background_button"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text_size="20fp"
+                ohos:top_margin="5fp"
+                ohos:text="停止录音并识别"/>
+
+            <Button
+                ohos:id="$+id:cancel"
+                ohos:background_element="$graphic:background_button"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text_size="20fp"
+                ohos:top_margin="5fp"
+                ohos:text="取消"/>
+
+            <Text
+                ohos:id="$+id:volume"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:top_margin="5fp"
+                ohos:text_size="15fp"
+                ohos:text_color="#000000"/>
+
+            <Text
+                ohos:id="$+id:result"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text_size="13fp"
+                ohos:truncation_mode="auto_scrolling"
+                ohos:scrollable="true"
+                ohos:multiple_lines="true"
+                ohos:text_color="#000000"/>
+
+            <Text
+                ohos:id="$+id:time"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:text_size="15fp"
+                ohos:text_color="#000000"/>
+        </DirectionalLayout>
+    </ScrollView>
+
+</DirectionalLayout>

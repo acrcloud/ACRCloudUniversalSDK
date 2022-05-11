@@ -1,0 +1,77 @@
+{
+  "app": {
+    "bundleName": "com.acrcloud.acrcloudsdkhmdemo",
+    "vendor": "acrcloud",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.acrcloud.acrcloudsdkhmdemo",
+    "name": ".MyApplication",
+    "mainAbility": "com.acrcloud.acrcloudsdkhmdemo.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.acrcloud.acrcloudsdkhmdemo.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "reason": "Recognize Online.",
+        "usedScene": {
+          "ability": ["default"],
+          "when": "always"
+        },
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "reason": "Recognize Online.",
+        "usedScene": {
+          "ability": ["default"],
+          "when": "always"
+        },
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "reason": "Recognize Record Audio.",
+        "usedScene": {
+          "ability": ["default"],
+          "when": "always"
+        },
+        "name": "ohos.permission.MICROPHONE"
+      }
+    ]
+  }
+}
