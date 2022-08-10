@@ -1,4 +1,7 @@
 version 1.3.14
+- 6 Fix NullPointerException of Recorder.
+
+version 1.3.13
 - 5 Fix NullPointerException of Recorder.
 
 version 1.3.12
