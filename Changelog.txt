@@ -1,4 +1,7 @@
 version 1.3.16
+- Optimize humming fingerprint.
+
+version 1.3.16
 - Fix (cancel >> startRecgnize) record permission bug.
 
 version 1.3.15
