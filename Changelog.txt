@@ -1,3 +1,6 @@
+version 1.3.19
+- Fix memory overflow bug for humming fingerprint.
+
 version 1.3.18
 - 1 Optimize humming fingerprint.
 
