@@ -1,3 +1,6 @@
+version 1.5.10
+- Remove login to ACRCloud for LocalRecognize.
+
 version 1.5.9
 - Add param createFingerprintMode in ACRCloudConfig.
   If your device do not have FPU, you can try add this config:
