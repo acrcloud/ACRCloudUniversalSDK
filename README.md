@@ -192,5 +192,15 @@ public ACRCloudClient() {
         nChannels: channel number of buffer
     */
     public String recognize(byte[] buffer, int bufferLen, int sampleRate, int nChannels);
+
+    /*
+        recognize fingerprint buffer and return the final result.
+        
+        buffer: acrcloud fingerprint buffer
+        bufferLen: the lenght of buffer
+        recType: AUDIO (audio fingerprint), HUMMING (humming fingerprint)
+        userParams: Some user-defined parameters.
+    */
+    public String recognizeFingerprint(byte[] buffer, int bufferLen, ACRCloudConfig.RecognizerType recType, Map<String, String> userParams)
 }
 ```
