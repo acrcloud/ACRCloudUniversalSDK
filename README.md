@@ -15,11 +15,11 @@ Follow one of the tutorials to create a project and get your host, access_key, a
  * [Recognize Live Channels and Custom Content](https://docs.acrcloud.com/tutorials/recognize-tv-channels-and-custom-content)
  * 
 
-## Identify Music or TV with iOS SDK
-This demo shows how to identify music ( songs ) or detect live TV channels by recorded sound with ACRCloud iOS SDK. Contact us if you have any questions or special requirements about the SDK: support@acrcloud.com
+## Identify Music or TV
+This demo shows how to identify music ( songs ) or detect live TV channels by recorded sound with ACRCloud SDK. Contact us if you have any questions or special requirements about the SDK: support@acrcloud.com
 
 ## Preparation
-* The newest ACRCloud iOS SDK which contains both ObjectC and Swift demo projects.
+* The newest ACRCloud SDK which contains both ObjectC and Swift demo projects.
 * If you want to recognize music, you need an Audio Recognition project. ( See [How to Recognize Music](https://docs.acrcloud.com/tutorials/recognize-music) )
 * If you want to detect tv channels, you need a Live Channel Detection project. ( See [How to Detect Live TV Channels](https://docs.acrcloud.com/tutorials/detect-live-and-timeshift-tv-channels) )
 * Save the information of “host”, “access_key”, “access_secret” of your project.
