@@ -1,3 +1,6 @@
+version 1.5.11
+- Check if audiobuf is null in resumeRecognize, fixed this exception bug.
+
 version 1.5.10
 - Remove login to ACRCloud for LocalRecognize.
 
