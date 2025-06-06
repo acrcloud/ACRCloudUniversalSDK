@@ -1,3 +1,6 @@
+version 1.5.12
+- Recompile sdk with NDK 29.
+
 version 1.5.11
 - Check if audiobuf is null in resumeRecognize, fixed this exception bug.
 
