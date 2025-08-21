@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/pony/.ohos/config/default_ACRCloudHarmonyNextSDKDemo_BlWsZO3soi_AKvIaC6fE52nvo9ouDtC5p_bk9YVNXE4=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A1CBEB68E9F30A3CFF32903D0EAAB3089E32C4E8403B8B254DEF0AA8D2771367C817E59ECC5F5",
+          "profile": "/Users/pony/.ohos/config/default_ACRCloudHarmonyNextSDKDemo_BlWsZO3soi_AKvIaC6fE52nvo9ouDtC5p_bk9YVNXE4=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/pony/.ohos/config/default_ACRCloudHarmonyNextSDKDemo_BlWsZO3soi_AKvIaC6fE52nvo9ouDtC5p_bk9YVNXE4=.p12",
+          "storePassword": "0000001A279DFB48757C963F67702BF4B3B3636BB2C2928B570CB813F80A91D64E61A1A9C1F50A7277FA"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.0.5(17)",
+        "compatibleSdkVersion": "5.0.5(17)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "acrcloud_sdk": "file:libs/acrcloud_harmony_next_sdk_1.0.0.har"
+  }
+}
+
