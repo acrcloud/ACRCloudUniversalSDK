@@ -1,3 +1,6 @@
+version 1.5.14
+- Remove some logs.
+
 version 1.5.13
 - Recompile sdk with NDK 29, and use APP_SUPPORT_FLEXIBLE_PAGE_SIZES=true.
 
