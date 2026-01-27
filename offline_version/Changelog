@@ -1,3 +1,6 @@
+version 1.5.15
+- Fixed a bug of continuous recognition.
+
 version 1.5.14
 - Remove some logs.
 
