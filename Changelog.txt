@@ -1,3 +1,26 @@
+version 1.3.34
+- Add startRecognize(MediaProjection mediaProjection);
+-
+- private static final int REQUEST_MEDIA_PROJECTION = 1001;
+- private MediaProjectionManager projectionManager;
+- private void requestMediaProjection() {
+-     projectionManager = (MediaProjectionManager) getSystemService(Context.MEDIA_PROJECTION_SERVICE);
+-     startActivityForResult(projectionManager.createScreenCaptureIntent(), REQUEST_MEDIA_PROJECTION);
+- }
+- @Override
+- protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+-     super.onActivityResult(requestCode, resultCode, data);
+-     ACRCloudLogger.e(TAG, "onActivityResult");
+-     if (requestCode == REQUEST_MEDIA_PROJECTION && resultCode == RESULT_OK) {
+-         MediaProjection mediaProjection = projectionManager.getMediaProjection(resultCode, data);
+-
+-         if (this.mClient == null || !this.mClient.startRecognize(mediaProjection)) {
+-             mResult.setText("start error!");
+-         }
+-         startTime = System.currentTimeMillis();
+-     }
+- }
+
 version 1.3.33
 - Some useless functions have been removed.
 
